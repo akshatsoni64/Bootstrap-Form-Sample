@@ -24,8 +24,7 @@
         'Content-Type: application/json'
     ]);
 
-    $response = curl_exec($curl);
-    echo "Response Variable: ".$response;
+    $response = curl_exec($curl);    
     curl_close($curl);
 
     $responseData = json_decode($response);
